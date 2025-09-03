@@ -1,36 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+        /* Overall */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg: rgb(0, 0, 0)  ;
+    --fontcol: #e6b05c ;
+    --hovercol: #8390FA ;
+    --activecol: #586994 ;
+    --visitedcol: #EE4266 ;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    list-style: none;
+    font-family: "Asimovian";
+    text-decoration: none;
+}
+/* =========================================================================================================================== */
+    /* Navigation Bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg);
+    position: sticky;
+    top: 0;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    -webkit-text-stroke: 0.5px black;
+}
+nav ul li a{
+    color: var(--fontcol);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    background: var(--hovercol);
+    border-radius: 15px;
+}
+nav ul li a:active{
+    background-color: var(--activecol);
+}
+.auth button{
+    padding: 10px;
+    background-color: var(--fontcol);
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.auth button:hover{
+    background-color: var(--hovercol);
+    border-radius: 20px;
+}
+/* =========================================================================================================================== */
+    /* Body Elements*/
 
 body{
-    font-family: "Asimovian";
     border-top: 10px black solid;
     border-right: 10px black solid;
     border-left: 10px black solid;
     border-bottom: 10px black solid;
     border-radius: 20px;
 }
-nav{
-    font-size: 26px;
-    text-align: center;
-    word-spacing: 200px;
-    background-color: black;
-    color: #d1a255;
-}
-.image_1{
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-}
 h1, p, #interactive, h3, form{
     text-align: center;
 }
-#parent_div_8{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 20px;
+h1, p{
+    font-family: "Roboto";
 }
-
+p{
+    font-size: 20px;
+}
+#interactive button{
+    border: black solid 3px;
+    background-color: var(--fontcol);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+#interactive button:hover{
+    background-color: var(--hovercol);
+    border-radius: 20px;
+}
+#interactive a{
+    border: black solid 3px;
+    background: var(--fontcol);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--fontcol);
+}
+#interactive a:hover{
+    background: var(--hovercol);
+    border-radius: 20px;
+}
+#interactive a:active{
+    background-color: var(--activecol);
+}
+#interactive a:visited{
+    color: var(--visitedcol);
+}
 #parent_div_1{
     display: flex;
     margin: 0 auto;
@@ -45,7 +119,6 @@ h1, p, #interactive, h3, form{
     justify-content: center;
     gap: 20px;
 }
-
 #parent_div_3{
     display: flex;
     margin: 0 auto;
@@ -56,13 +129,47 @@ h1, p, #interactive, h3, form{
 #parent_div_4{
     text-align: center;
 }
-a{
-    text-decoration: none;
+#parent_div_8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
 }
+#email, #phone, #message{
+    border: black solid 3px;
+    border-radius: 15px;
+    font-family: "Roboto";
+    padding: 10px;
+}
+#email:focus{
+    outline: none;
+    border: solid 3px var(--fontcol);
+}
+#phone:focus{
+    border: solid 3px var(--fontcol);
+    outline: none;
+}
+#message:focus{
+    outline: none;
+    border: solid 3px var(--fontcol);
+}
+.submit_1{
+    padding: 10px;
+    border: black solid 3px;
+    border-radius: 15px;
+    background: var(--fontcol);
+}
+.submit_1:hover{
+    background-color: var(--hovercol);
+    border-radius: 20px;
+}
+.submit_1:active{
+    background-color: var(--activecol);
+}
+/* =========================================================================================================================== */
+    /* Footer */
 
-.table_1{
-    margin: 0 auto;
-}
 #adult_1{
     display: flex;
     justify-content: center;
