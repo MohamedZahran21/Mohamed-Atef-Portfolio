@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+body{
+    font-family: "Asimovian";
+    border-top: 10px black solid;
+    border-right: 10px black solid;
+    border-left: 10px black solid;
+    border-bottom: 10px black solid;
+    border-radius: 20px;
+}
+nav{
+    font-size: 26px;
+    text-align: center;
+    word-spacing: 200px;
+    background-color: black;
+    color: #d1a255;
+}
+.image_1{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+h1, p, #interactive, h3, form{
+    text-align: center;
+}
+#parent_div_8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+#parent_div_1{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+#parent_div_2{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#parent_div_3{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+#parent_div_4{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+.table_1{
+    margin: 0 auto;
+}
+#adult_1{
+    display: flex;
+    justify-content: center;
+}
+.child_div_1, .child_div_2, .child_div_3{
+    display: inline-block;
+}
